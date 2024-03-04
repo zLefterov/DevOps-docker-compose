@@ -35,4 +35,6 @@ Tomcat at http://localhost:8080.
 RabbitMQ management interface at http://localhost:15672.
 MySQL can be accessed at port 3306 with the credentials specified in docker-compose.yml.
 
-Feel free to fork the project and submit pull requests with any enhancements. Your contributions are always welcome!
+Feel free to fork the project and submit pull requests with any enhancements. 
+
+Your contributions are always welcome!
