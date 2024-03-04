@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+  tomcat:
+    image: tomcat:latest
+    ports:
+      - "8080:8080"
+  rabbitmq:
+    image: rabbitmq:latest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  memcached:
+    image: memcached:latest
+    ports:
+      - "11211:11211"
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: sqlUser
+      MYSQL_PASSWORD: sqlSecret
+volumes:
+  db_data:
